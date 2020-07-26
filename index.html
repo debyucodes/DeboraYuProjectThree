@@ -6,28 +6,38 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Overpass|Permanent+Marker" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://kit.fontawesome.com/3e2ecb9775.js" crossorigin="anonymous"></script>
   <title>Drag Name Generator</title>
 </head>
 
 <body>
   <main>
-  <header class="hero">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="https://twitter.com/DebWebDev"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https:instagram.com/dbo.yu"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/deborayu/"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </nav>
     <h1>
       So you want to be America's Next Drag Superstar?
     </h1>
     <h2>
       Gentlement, start your engine and may the best woman wi...
     </h2>
-    <p>wait but you'll need a drag name first don't you?</p>
+    <p>wait but you'll need a <span>drag name</span> first don't you?</p>
     <button>go to my drag name generator</button>
   </header>
 
   <section>
     <form action="">
-      <label for="firstName">First Name</label>
-      <input type="text" name="firstName">
-      <label for="lastName">Last Name</label>
-      <input type="text" name="lastName">
+      <div class="input">
+        <label for="firstName" class="sr-only">First Name</label>
+        <input type="text" name="firstName" placeholder="First Name">
+        <label for="lastName" class="sr-only">Last Name</label>
+        <input type="text" name="lastName" placeholder="Last Name">
+      </div>
       <button class="submit">Gimme my drag name!</button>
     </form>
   </section>

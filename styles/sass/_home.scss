@@ -1,0 +1,80 @@
+h1 {
+  @include primaryFont(4rem);
+}
+
+h2 {
+  font-family: $primary;
+  color: $grey;
+  font-size: 2rem;
+}
+
+button {
+  font-family: $primary;
+  font-size: 2rem;
+  color: $darkPink;
+  background-color: $teal;
+  text-decoration: none;
+  padding: 30px;
+  border: 2px solid $darkPink;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.2);
+  color: $pink
+}
+
+ul {
+  display:flex;
+  justify-content: space-evenly;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+    color: $teal;
+    font-size: 200%;
+    transition: all 0.2s ease-in;
+  }
+
+  a:hover {
+    color: $grey;
+  }
+}
+
+header {
+  text-align: center;
+  padding: 100px 50px;
+  background: $darkPink;
+}
+
+p {
+  font-family: $secondary;
+  color: $teal;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+span {
+  color: $gold;
+  font-weight: 800;
+}
+
+section {
+  background: $gold;
+  padding: 50px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin: 100px auto;
+  }
+}
+
+.results {
+  background: $darkPink;
+}

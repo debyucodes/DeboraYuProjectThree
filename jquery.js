@@ -83,14 +83,15 @@ dragApp.getNames = function() {
     const resultsLastName = dragLastName[keyLN];
     console.log(resultsLastName)
     //try to make this a lookup method in dragApp, since we're repeating
-    return resultsLastName;
+    return resultsFirstName;
   })
 }
 
 //Get random name from the array
 
-const getRandomFirstName = () => `${resultsFirstName[Math.floor(Math.random() * resultsFirstName.length)]}`;
-console.log(getRandomFirstName);
+const getRandomFirstName =
+  resultsFirstName[Math.floor(Math.random() * resultsFirstName.length)]
+console.log(getRandomFirstName)
 
 const getRandomLastName = () => `${resultsLastName[Math.floor(Math.random() * resultsLastName.length)]}`
 

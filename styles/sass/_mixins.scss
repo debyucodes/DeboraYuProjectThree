@@ -1,0 +1,12 @@
+@mixin primaryFont($sizeValue) {
+  font-family: $primary;
+  font-size: $sizeValue;
+  color: $gold;
+  text-transform: uppercase;
+}
+
+@mixin secondaryFont($sizeValue) {
+  font-family: $secondary;
+  font-size: $sizeValue;
+  color: $darkPink;
+}
