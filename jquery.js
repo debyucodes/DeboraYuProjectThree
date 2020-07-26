@@ -14,8 +14,8 @@ const dragFirstName = {
   l: ['lust', 'lovely'],
   m: ['muah', 'moan'],
   n: ['nude', 'naked'],
-  o: ['orgasm', 'oh my god'],
-  p: ['pussy', 'pissy'],
+  o: ['oh my god'],
+  p: ['pussy cat', 'pissy'],
   q: ['quiet', 'queer'],
   r: ['raw', 'rawr'],
   s: ['sexy', 'sex doll'],
@@ -59,10 +59,10 @@ const dragLastName = {
 //Create namespace
 const dragApp = {};
 
-
 dragApp.getNames = function() {
+  console.log('get names running')
 
-  $('form').on('submit', function(e) {
+  $('form').on('submit', function(event) {
     event.preventDefault();
 
     const userFirstName = $('input[name=firstName]').val();
@@ -70,26 +70,40 @@ dragApp.getNames = function() {
 
     const firstLetterOfFirstName = userFirstName.charAt(0);
     const firstLetterOfLastName = userLastName.charAt(0);
+    
+    //No need for a for loop. Since dragFirstName is an object
+    console.log(firstLetterOfFirstName, 'first letter first name')
+    //convert the letters to lower case first
+    const keyFN = firstLetterOfFirstName.toLowerCase()
+    const resultsFirstName = dragFirstName[keyFN];
+    console.log(resultsFirstName);
+    
+    console.log(firstLetterOfLastName, 'first letter last name')
+    const keyLN = firstLetterOfLastName.toLowerCase()
+    const resultsLastName = dragLastName[keyLN];
+    console.log(resultsLastName)
+    //try to make this a lookup method in dragApp, since we're repeating
+    return resultsLastName;
   })
+}
+
+//Get random name from the array
+
+const getRandomFirstName = () => `${resultsFirstName[Math.floor(Math.random() * resultsFirstName.length)]}`;
+console.log(getRandomFirstName);
+
+const getRandomLastName = () => `${resultsLastName[Math.floor(Math.random() * resultsLastName.length)]}`
+
+//Print results on the page
+// dragApp.showResults = () => {
   
-}
+// }
 
-//for each
-
-firstLetterOfFirstName.forEach(function(){
-  const getFirstName = dragFirstName;
-  const getLastName = dragLastName;
-});
-
-//for loop this shit
-for (let i=0; i < dragFirstName.length; i=i+1){
-  console.log(i);
-}
 
 //initialize to kick off
 dragApp.init = function() {
   console.log('we ready bruh!');
-  dragApp.getNames ();
+  dragApp.getNames();
 }
 
 // Doc ready
