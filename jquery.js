@@ -11,7 +11,7 @@ const dragFirstName = {
   i: ['Ivy', 'Iam', 'Iris', 'Ivana'],
   j: ['Joy', 'Jasmine'],
   k: ['Kinky', 'Kitty cat'],
-  l: ['Lust', 'Lovely'],
+  l: ['Lust', 'Lucy'],
   m: ['Mistress', 'Miss', 'Mrs'],
   n: ['Naomi', 'Naked'],
   o: ['Oh my god'],
@@ -30,7 +30,7 @@ const dragFirstName = {
 
 const dragLastName = {
   a: ['Alisha', 'Angel', ],
-  b: ['Baddie', 'Bonnie', 'Beverly'],
+  b: ['Baddie', 'Bottom', 'Beverly'],
   c: ['Cat', 'Cream', 'Cookie'],
   d: ['Daisy', 'Dolly', 'Diamond'],
   f: ['Fantasy', 'Fish'],
