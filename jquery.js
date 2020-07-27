@@ -1,59 +1,59 @@
 //Array of potential names
 const dragFirstName = {
-  a: ['apple', 'abba'],
-  b: ['bob', 'baby'],
-  c: ['coco', 'candy'],
-  d: ['diva', 'dasty'],
-  e: ['easy'],
-  f: ['feather'],
-  g: ['gorgeous'],
-  h: ['hot', 'homo'],
-  i: ['icon'],
-  j: ['jade'],
-  k: ['kinky', 'kitty cat'],
-  l: ['lust', 'lovely'],
-  m: ['muah', 'moan'],
-  n: ['nude', 'naked'],
-  o: ['oh my god'],
-  p: ['pussy cat', 'pissy'],
-  q: ['quiet', 'queer'],
-  r: ['raw', 'rawr'],
-  s: ['sexy', 'sex doll'],
-  t: ['tanya', 'tasty'],
-  u: ['uphoria', 'ugly'],
-  v: ['vintage', 'valkorant'],
-  w: ['witch', 'wicked'],
-  x: ['xtc', 'xanax'],
-  y: ['youthful'],
-  z: ['zesty']
+  a: ['Anastasia', 'Anaconda', 'Avery'],
+  b: ['Bebe', 'Baby', 'Baby'],
+  c: ['Coco', 'Chanel', 'Cloepatra'],
+  d: ['Diva', 'Dainty'],
+  e: ['Elegant', 'Emily'],
+  f: ['Filthy', 'Fancy'],
+  g: ['Gorgeous', 'Glam', 'Ginger'],
+  h: ['Honey', 'Heidi'],
+  i: ['Ivy', 'Iam', 'Iris', 'Ivana'],
+  j: ['Joy', 'Jasmine'],
+  k: ['Kinky', 'Kitty cat'],
+  l: ['Lust', 'Lovely'],
+  m: ['Mistress', 'Miss', 'Mrs'],
+  n: ['Naomi', 'Naked'],
+  o: ['Oh my god'],
+  p: ['Pearl', 'Peachy', 'Poison'],
+  q: ['Quiet', 'Queen'],
+  r: ['Robin', 'Ruby'],
+  s: ['Sexy', 'Savannah', 'Sassy'],
+  t: ['Toxic', 'Tasty'],
+  u: ['Uphoria', 'Umm'],
+  v: ['Veronica', 'Victoria'],
+  w: ['Witch', 'Wicked'],
+  x: ['XTC', 'Xanax'],
+  y: ['Yellow', 'Yennefer', 'Yoyo'],
+  z: ['Zesty']
 };
 
 const dragLastName = {
-  a: ['aa'],
-  b: ['baddie', 'booty', 'bonbon'],
-  c: ['cat', 'catfish'],
-  d: ['daisy'],
-  f: ['fantasy', 'fish'],
-  g: ['gurl'],
-  h: ['honey', 'henny', 'hoe'],
-  i: ['izzy'],
-  j: ['judy'],
-  k: ['kiki'],
-  l: ['lesbian'],
-  m: ['mini', 'mommy'],
-  n: ['nancy', 'ninja'],
-  o: ['obsese', 'obedient'],
-  p: ['protege'],
-  q: ['queen', 'quantum'],
-  r: ['royale', 'regal'],
-  s: ['samurai', 'sac'],
-  t: ['tea', 'teacup'],
-  u: ['udon', 'utopia'],
-  v: ['vagina', 'vengeance'],
-  w: ['whore', 'wombat'],
-  x: ['x'],
-  y: ['ywans'],
-  z: ['zero', 'zig zag']
+  a: ['Alisha', 'Angel', ],
+  b: ['Baddie', 'Bonnie', 'Beverly'],
+  c: ['Cat', 'Cream', 'Cookie'],
+  d: ['Daisy', 'Dolly', 'Diamond'],
+  f: ['Fantasy', 'Fish'],
+  g: ['Gin', 'Genie'],
+  h: ['Heather', 'Henny', 'Hoe'],
+  i: ['Izzy', 'Ida'],
+  j: ['Justice'],
+  k: ['Kiki', 'Kisses'],
+  l: ['Lavender'],
+  m: ['Mini', 'Mama', 'Money'],
+  n: ['Nancy', 'Noel'],
+  o: ['Obsession', 'Orchid'],
+  p: ['Protege', 'Pisces'],
+  q: ['Quincy', 'Queer'],
+  r: ['Royale', 'Revenge'],
+  s: ['Sativa', 'Succubus'],
+  t: ['Tea', 'Tanya'],
+  u: ['Utopia', 'Ursa'],
+  v: ['Versace', 'Violet'],
+  w: ['Wallflower', 'Winter'],
+  x: ['X'],
+  y: ['Yearn', 'Yahoo'],
+  z: ['Zero', 'Zen']
 };
 
 //Create namespace
@@ -98,10 +98,6 @@ dragApp.getNames = function() {
     alert(`${getRandomFirstName} ${getRandomLastName}`);
   });
 }
-
-
-
-
 
 //initialize to kick off
 dragApp.init = function() {

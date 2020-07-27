@@ -330,7 +330,7 @@ form {
 form input {
   background: #FF5ED5;
   padding: 10px 20px;
-  border: none;
+  border: 3px solid #59C9C5;
 }
 
 form p {
@@ -339,4 +339,34 @@ form p {
 
 .results {
   background: #E5007C;
+}
+
+footer {
+  background: #4D4249;
+}
+
+footer p {
+  font-family: "Permanent Marker", cursive;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 381px) {
+  body {
+    overflow-x: hidden;
+  }
+  h1 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    color: #D1AC60;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  button,
+  .button {
+    font-size: 1rem;
+    padding: 10px;
+  }
 }

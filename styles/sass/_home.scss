@@ -69,7 +69,7 @@ form {
   input {
     background: $pink;
     padding: 10px 20px;
-    border: none;
+    border: 3px solid $teal;
   }
 
   p{
@@ -79,4 +79,15 @@ form {
 
 .results {
   background: $darkPink;
+}
+
+footer {
+  
+  background: $grey;
+  
+  p{
+    font-family: $primary;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
