@@ -248,7 +248,8 @@ h2 {
   font-size: 2rem;
 }
 
-button {
+button,
+.button {
   font-family: "Permanent Marker", cursive;
   font-size: 2rem;
   color: #E5007C;
@@ -259,9 +260,11 @@ button {
   border-radius: 100px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin: 100px auto;
 }
 
-button:hover {
+button:hover,
+.button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   color: #FF5ED5;
@@ -300,6 +303,7 @@ p {
   color: #59C9C5;
   text-transform: uppercase;
   font-size: 2rem;
+  margin-bottom: 50px;
 }
 
 span {
@@ -323,8 +327,14 @@ form {
           flex-direction: column;
 }
 
-form button {
-  margin: 100px auto;
+form input {
+  background: #FF5ED5;
+  padding: 10px 20px;
+  border: none;
+}
+
+form p {
+  color: #E5007C;
 }
 
 .results {
