@@ -33,6 +33,7 @@ const dragLastName = {
   b: ['Baddie', 'Bottom', 'Beverly'],
   c: ['Cat', 'Cream', 'Cookie'],
   d: ['Daisy', 'Dolly', 'Diamond'],
+  e: ['Easy', 'Egg tart'],
   f: ['Fantasy', 'Fish'],
   g: ['Gin', 'Genie'],
   h: ['Heather', 'Henny', 'Hoe'],
