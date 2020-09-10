@@ -1,11 +1,11 @@
 //Array of potential names
 const dragFirstName = {
   a: ['Anastasia', 'Anaconda', 'Avery'],
-  b: ['Bebe', 'Baby', 'Baby'],
+  b: ['Bebe', 'Baby', 'Beyond'],
   c: ['Coco', 'Chanel', 'Cloepatra'],
   d: ['Diva', 'Dainty'],
   e: ['Elegant', 'Emily'],
-  f: ['Filthy', 'Fancy'],
+  f: ['Filthy', 'Fancy', 'Fabulous'],
   g: ['Gorgeous', 'Glam', 'Ginger'],
   h: ['Honey', 'Heidi'],
   i: ['Ivy', 'Iam', 'Iris', 'Ivana'],
@@ -96,7 +96,8 @@ dragApp.getNames = function() {
 
     //Print results on the page
     //Display as alert!!
-    alert(`${getRandomFirstName} ${getRandomLastName}`);
+    // alert(`${getRandomFirstName} ${getRandomLastName}`);
+    $('.results').append(`<h2 class="firstname">${getRandomFirstName}</h2> <h2 class"lastname">${getRandomLastName}</h2>`);
   });
 }
 
