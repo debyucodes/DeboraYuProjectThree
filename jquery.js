@@ -61,10 +61,10 @@ const dragLastName = {
 const dragApp = {};
 
 dragApp.getNames = function() {
-  console.log('get names running')
 
   $('form').on('submit', function(event) {
     event.preventDefault();
+    // $('form').find('input:text').val('');
 
     const userFirstName = $('input[name=firstName]').val();
     const userLastName = $('input[name=lastName]').val();
@@ -73,38 +73,54 @@ dragApp.getNames = function() {
     const firstLetterOfLastName = userLastName.charAt(0);
     
     //No need for a for loop. Since dragFirstName is an object
-    console.log(firstLetterOfFirstName, 'first letter first name')
+    // console.log(firstLetterOfFirstName, 'first letter first name')
+
     //convert the letters to lower case first
     const keyFN = firstLetterOfFirstName.toLowerCase()
     const resultsFirstName = dragFirstName[keyFN];
-    console.log(resultsFirstName);
     
-    console.log(firstLetterOfLastName, 'first letter last name')
     const keyLN = firstLetterOfLastName.toLowerCase()
     const resultsLastName = dragLastName[keyLN];
-    console.log(resultsLastName)
     //try to make this a lookup method in dragApp, since we're repeating
 
     //Get random name from the array
     const getRandomFirstName =
     resultsFirstName[Math.floor(Math.random() * resultsFirstName.length)]
-    console.log(getRandomFirstName)
 
     const getRandomLastName =
     resultsLastName[Math.floor(Math.random() * resultsLastName.length)]
-    console.log(getRandomLastName)
 
     //Print results on the page
     //Display as alert!!
     // alert(`${getRandomFirstName} ${getRandomLastName}`);
-    $('.results').append(`<h2 class="firstname">${getRandomFirstName}</h2> <h2 class"lastname">${getRandomLastName}</h2>`);
+    $('.results').append(`
+    <div class="name">
+      <h1>Your drag name:</h1>
+      <h2 class="firstname">${getRandomFirstName}</h2><h2 class"lastname">${getRandomLastName}</h2>
+    </div>`);
   });
 }
 
+// toggle the instruction overlay
+dragApp.instruction = () => {
+  $('.question').on('click', function(){
+    $('.overlay').show();
+  })
+}
+
+// close overlay
+dragApp.close = () => {
+  $('#close').on('click', function(){
+    $('.overlay').hide();
+  })
+}
+
+
 //initialize to kick off
 dragApp.init = function() {
-  console.log('we ready bruh!');
   dragApp.getNames();
+  dragApp.instruction();
+  dragApp.close();
 }
 
 // Doc ready

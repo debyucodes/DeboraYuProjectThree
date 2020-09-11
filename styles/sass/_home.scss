@@ -1,5 +1,40 @@
+.wrapper {
+  width: 80%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.overlay {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: $grey;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+  h3 {
+    font-size: 3rem;
+    font-family: $primary;
+  }
+
+  .overlayText {
+    background: white;
+    color: $pink;
+    font-family: $secondary;
+    margin: 0 50px;
+    padding: 50px;
+  }
+
+  #close {
+    font-size: 4rem;
+    cursor: pointer;
+  }
+}
+
 h1 {
-  @include primaryFont(4rem);
+  @include primaryFont(3rem);
 }
 
 h2 {
@@ -25,26 +60,33 @@ ul {
   justify-content: space-evenly;
   list-style: none;
 
-  a {
+  a,
+  .question {
     text-decoration: none;
     color: $teal;
     font-size: 200%;
     transition: all 0.2s ease-in;
   }
 
-  a:hover {
+  a:hover,
+  .question:hover {
     color: $grey;
+  }
+
+  .question {
+    cursor: pointer;
   }
 }
 
 header {
   text-align: center;
-  padding: 100px 50px;
+  padding: 10px 50px;
   background: $darkPink;
+  position: relative;
 }
 
 p {
-  font-family: $secondary;
+  font-family: $primary;
   color: $teal;
   text-transform: uppercase;
   font-size: 2rem;
@@ -78,7 +120,29 @@ form {
 }
 
 .results {
-  background: $darkPink;
+  overflow-y: scroll;
+  border: 5px solid $grey;
+  border-radius: 15px;
+  max-height: 50vh;
+
+  h1 {
+    color: $pink;
+  }
+
+  .firstname {
+    margin-right: 20px;
+  }
+
+  .lastname {
+    margin-left: 20px;
+  }
+
+  .name {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 footer {

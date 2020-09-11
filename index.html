@@ -11,41 +11,56 @@
 </head>
 
 <body>
-  <main>
   <header>
-    <nav>
-      <ul>
-        <li><a href="https://twitter.com/DebWebDev"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="https:instagram.com/dbo.yu"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/deborayu/"><i class="fab fa-linkedin-in"></i></a></li>
-      </ul>
-    </nav>
-    <h1>
-      So you want to be America's Next Drag Superstar?
-    </h1>
-    <h2>
-      Gentlement, start your engine and may the best woman wi...
-    </h2>
-    <p>wait but you'll need a <span>drag name</span> first don't you?</p>
-    <a href="#form" class="button">go to my drag name generator</a>
-  </header>
-
-  <section>
-    <form action="" id="form">
-      <div class="input">
-        <p>Give us your first and last name, and we'll do the rest!</p>
-        <label for="firstName" class="sr-only">First Name</label>
-        <input type="text" name="firstName" placeholder="First Name">
-        <label for="lastName" class="sr-only">Last Name</label>
-        <input type="text" name="lastName" placeholder="Last Name">
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li>
+            <a href="https://twitter.com/DebWebDev"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https:instagram.com/dbo.yu"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/deborayu/"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <i class="fas fa-question question"></i>
+          </li>
+        </ul>
+      </nav>
+      <h1>
+        Drag Name Generator
+      </h1>
+    </div>
+    <div class="overlay">
+      <div class="wrapper">
+        <h3>Instructions:</h3>
+        <div class="overlayText">
+          <p>So you want to be America's next drag Superstar? Welcome to the Drag Name Generator, please enter your first and last name, and we will generate a name based on your real name!</p>
+        <i class="fas fa-times" id="close"></i>
+        </div>
       </div>
-      <button class="submit">Gimme my drag name!</button>
-    </form>
-  </section>
-
-  <section class="results">
-    <!-- dynamically print from js -->
-  </section>
+  </header>
+  
+  <main>
+    <section>
+      <div class="wrapper">
+        <form action="" id="form">
+          <div class="input">
+            <p>Give us your first and last name, and we'll do the rest!</p>
+            <label for="firstName" class="sr-only">First Name</label>
+            <input type="text" name="firstName" placeholder="First Name">
+            <label for="lastName" class="sr-only">Last Name</label>
+            <input type="text" name="lastName" placeholder="Last Name">
+          </div>
+          <button class="submit">Gimme my drag name!</button>
+        </form>
+      </div>
+      <div class="results">
+        <!-- dynamic print from js -->
+      </div>
+    </section>
   </main>
 
   <script src='https://code.jquery.com/jquery-3.4.0.min.js'></script>
