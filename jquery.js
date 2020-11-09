@@ -20,10 +20,10 @@ const dragFirstName = {
   r: ['Robin', 'Ruby'],
   s: ['Sexy', 'Savannah', 'Sassy'],
   t: ['Toxic', 'Tasty'],
-  u: ['Uphoria', 'Umm'],
+  u: ['Uphoria', 'Uranus'],
   v: ['Veronica', 'Victoria'],
-  w: ['Witch', 'Wicked'],
-  x: ['XTC', 'Xanax'],
+  w: ['Wild', 'Wicked'],
+  x: ['Xcellent', 'Xtravagent'],
   y: ['Yellow', 'Yennefer', 'Yoyo'],
   z: ['Zesty']
 };
@@ -31,10 +31,10 @@ const dragFirstName = {
 const dragLastName = {
   a: ['Alisha', 'Angel', ],
   b: ['Baddie', 'Bottom', 'Beverly'],
-  c: ['Cat', 'Cream', 'Cookie'],
+  c: ['Cat', 'Creme', 'Cookie'],
   d: ['Daisy', 'Dolly', 'Diamond'],
-  e: ['Easy', 'Egg tart'],
-  f: ['Fantasy', 'Fish'],
+  e: ['Easy', 'Euphoria'],
+  f: ['Fantasy', 'Fish', 'Fox'],
   g: ['Gin', 'Genie'],
   h: ['Heather', 'Henny', 'Hoe'],
   i: ['Izzy', 'Ida'],
@@ -54,7 +54,7 @@ const dragLastName = {
   w: ['Wallflower', 'Winter'],
   x: ['X'],
   y: ['Yearn', 'Yahoo'],
-  z: ['Zero', 'Zen']
+  z: ['Zero', 'Zoey']
 };
 
 //Create namespace
