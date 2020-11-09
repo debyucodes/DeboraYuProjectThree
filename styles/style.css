@@ -295,7 +295,7 @@ button,
   border-radius: 100px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  margin: 100px auto;
+  margin: 60px auto;
 }
 
 button:hover,
@@ -419,6 +419,11 @@ footer p {
   font-family: "Permanent Marker", cursive;
   margin: 0 auto;
   text-align: center;
+}
+
+.bigButton {
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 381px) {

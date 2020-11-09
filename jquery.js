@@ -64,7 +64,6 @@ dragApp.getNames = function() {
 
   $('form').on('submit', function(event) {
     event.preventDefault();
-    // $('form').find('input:text').val('');
 
     const userFirstName = $('input[name=firstName]').val();
     const userLastName = $('input[name=lastName]').val();
@@ -98,6 +97,8 @@ dragApp.getNames = function() {
       <h1>Your drag name:</h1>
       <h2 class="firstname">${getRandomFirstName}</h2><h2 class"lastname">${getRandomLastName}</h2>
     </div>`);
+
+    dragApp.clear();
   });
 }
 
@@ -115,12 +116,18 @@ dragApp.close = () => {
   })
 }
 
+// clear input
+dragApp.clear = () => {
+  $('input').val('');
+}
+
 
 //initialize to kick off
 dragApp.init = function() {
   dragApp.getNames();
   dragApp.instruction();
   dragApp.close();
+  dragApp.clear();
 }
 
 // Doc ready
