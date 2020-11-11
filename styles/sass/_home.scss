@@ -148,12 +148,21 @@ form {
 footer {
   
   background: $grey;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
   
   p{
     font-family: $primary;
     margin: 0 auto;
     text-align: center;
   }
+}
+
+html {
+  position: realtive;
+  min-height: 100%;
 }
 
 .bigButton {
